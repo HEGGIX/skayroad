@@ -1,6 +1,14 @@
 import RequestButton from "../../ui-components/requestButton"
 import arrow from "../../assets/images/arrow.png"
 import "../start/styles/styles.scss"
+import {IStartInfoBox } from "../../types"
+import StartInfoBox from "../../ui-components/startInfoBox"
+
+const startInfoBoxData: IStartInfoBox [] = [
+    {title: "Оставьте заявку на сайте",text:"Мы перезвоним для уточнения деталей"},
+    {title: "Скачайте приложение Яндекс PRO",text:"Мы перезвоним для уточнения деталей"},
+    {title: "Выходите на линию",text:"Получайте первые заказы и зарабатывайте"}
+]
 
 const Start = () => {
     return(
@@ -11,7 +19,13 @@ const Start = () => {
                     <img src={arrow} alt="arrow" />
                     <RequestButton/>
                 </div>
-                <div></div>
+                <div className="start__info-container">
+                    {startInfoBoxData.map((box) => {
+                        return(
+                            <StartInfoBox title={box.title} text={box.text}/>
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )
