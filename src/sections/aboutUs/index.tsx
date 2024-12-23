@@ -1,4 +1,5 @@
 import "../aboutUs/styles/style.scss"
+import "../aboutUs/styles/styleMedia.scss"
 import support from "../../assets/images/support-img.png"
 import schedule  from "../../assets/images/schedule-img.png"
 import income from "../../assets/images/income-img.png"
@@ -8,11 +9,11 @@ import { IInfoBox } from "../../types"
 import InfoBox from "../../ui-components/infoBox"
 
 const infoBoxData:IInfoBox[] = [
-    {img:support,text:"Поддержка 24/7"},
+    {img:payments,text: "Выплаты на карту еженедельно"},
     {img:schedule,text:"Свободный график работы"},
     {img:income,text:"Доход от 2000 BYN в месяц"},
     {img:experience,text:"Опыт работы не требуется"},
-    {img:payments,text:"Выплаты на карту еженедельно"}
+    {img:support,text:"Поддержка 24/7"},
 ]
 
 const AboutUs = () => {

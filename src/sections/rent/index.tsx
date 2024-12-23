@@ -7,7 +7,7 @@ const Rent = () => {
         <div className="rent">
             <div className="rent-wrapper">
                 <img className="rent-img" src={taxi} alt="taxi-car" />
-                <p className="rent-text">Предоставляем для работы автомобиль в аренду </p>
+                <p className="rent-text">Предоставляем для работы автомобиль <br/> в аренду </p>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import "../requestButton/styles.scss"
+import "../requestButton/styles/style.scss"
 
 const RequestButton = () => {
     return(

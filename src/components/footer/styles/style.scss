@@ -1,27 +1,24 @@
 .footer{
     background:rgba(26, 46, 53, 1);
     .footer-wrapper{
-        max-width: 1630px;
+        max-width: 1360px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 100px 0;
+        padding: 70px 0;
     }
     .footer-column{
         width: 25%;
         &.third{
-            width: 36%;
+            width: 42%;
         }
         .footer-column__text{
-            font-family: Montserrat;
-            font-size: 32px;
-            font-weight: 600;
+            font-family: "Montserrat",sans-serif;
+            font-size: 26px;
+            font-weight: 500;
             line-height: 39.01px;
             text-align: left;
             color: rgba(255, 255, 255, 1);
-            &.first{
-                padding-bottom: 10px;
-            }
         }
     }
 }

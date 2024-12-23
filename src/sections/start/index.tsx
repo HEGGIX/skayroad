@@ -16,7 +16,7 @@ const Start = () => {
             <div className="start-wrapper">
                 <div className="start__btn-container">
                     <h2 className="start__btn-title">Как начать работать?</h2>
-                    <img src={arrow} alt="arrow" />
+                    <img className = "start__btn-img" src={arrow} alt="arrow" />
                     <RequestButton/>
                 </div>
                 <div className="start__info-container">

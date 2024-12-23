@@ -1,0 +1,139 @@
+@media (max-width: 1530px){
+    .header{
+        width: 60.5%;
+    }
+}
+
+@media (max-width: 1400px){
+    .header{
+        width: 65.5%;
+    }
+}
+
+@media (max-width: 1305px){
+    .header{
+        width: 70.5%;
+    }
+}
+
+@media (max-width: 1250px){
+    .header{
+        width: 73.5%;
+    }
+}
+
+@media (max-width: 1150px){
+    .header{
+        width: 78.5%;
+    }
+}
+
+@media (max-width: 1080px){
+    .header{
+        width: 83.5%;
+    }
+}
+
+@media (max-width: 1020px){
+    .header{
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px){
+    .header{
+        .header-wrapper{
+            max-width: 750px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .header{
+        .header-wrapper{
+            max-width: 700px;
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .header{
+        .header-wrapper{
+            max-width: 620px;
+        }
+    }
+}
+
+@media (max-width: 660px){
+    .header{
+        .header-wrapper{
+            max-width: 560px;
+        }
+        .header-img{
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .header{
+        .header-wrapper{
+            max-width: 500px;
+            .header-phone{
+                font-size: 22px;
+                line-height: 25px;
+            }
+        }
+        .header-img{
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .header{
+        height: 220px;
+        .header-wrapper{
+            max-width: 460px;
+        }
+    }
+}
+
+@media (max-width: 510px){
+    .header{
+        .header-wrapper{
+            max-width: 410px;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .header{
+        height: 200px;
+        .header-wrapper{
+            max-width: 340px;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .header{
+        height: 180px;
+        .header-wrapper{
+            max-width: 300px;
+            .header-phone{
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .header{
+        height: 150px;
+        .header-wrapper{
+            max-width: 280px;
+        }
+    }
+}
