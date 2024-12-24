@@ -1,5 +1,6 @@
 import { Map,Placemark,YMaps } from "@pbe/react-yandex-maps"
 import "../map/styles/style.scss"
+import "../map/styles/styleMedia.scss"
 
 const MapPoint = () => {
     return(

@@ -1,5 +1,6 @@
 import "../rent/styles/style.scss"
 import "../offer/styles/style.scss"
+import "../rent/styles/styleMedia.scss"
 import taxi from "../../assets/images/taxi-car.png"
 
 const Rent = () => {

@@ -1,6 +1,7 @@
 import RequestButton from "../../ui-components/requestButton"
 import arrow from "../../assets/images/arrow.png"
 import "../start/styles/styles.scss"
+import "../start/styles/styleMedia.scss"
 import {IStartInfoBox } from "../../types"
 import StartInfoBox from "../../ui-components/startInfoBox"
 
