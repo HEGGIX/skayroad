@@ -7,4 +7,3 @@ export interface IStartInfoBox {
     title:string,
     text:string
 }
-

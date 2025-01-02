@@ -1,15 +1,39 @@
+import { useContext, useState } from "react"
 import "../form/styles/style.scss"
+import "../form/styles/styleMedia.scss"
+import { RequestContext } from "../../context"
+import close from "../../assets/images/close.png"
 
 const Form = () => {
+    const requestContext = useContext(RequestContext)
+    const [personInfo,setPersonInfo] = useState({name:"",phone:""})
+    const formHandler=(event:React.ChangeEvent<HTMLFormElement>)=>{
+        event?.preventDefault()
+        requestContext?.setRequest(!requestContext.request)
+    }
+    const inputHandler=(event:React.ChangeEvent<HTMLInputElement>)=>{
+        const {value,name}=event.target
+        setPersonInfo((prev) => ({
+            ...prev,
+            [name]:value
+        }))
+    }
+    const closeHandler = () => {
+        requestContext?.setRequest(!requestContext.request)
+    }
+    console.log(personInfo)
     return(
-        <div className="form">
+        <div className={requestContext.request === false ? "form hide" : "form"}>
             <div className="form-wrapper">
+                <div className="form__close-btn__container">
+                    <button className="form__close-btn" onClick={closeHandler}><img src={close} alt="close"/></button>
+                </div>
                 <div className="form__title-container">
                     <h2 className="form-title">Оставить заявку</h2>
                 </div>
-                <form className="form__inp-container">
-                    <input className="from-inp" type="text" placeholder="Имя, Фамилия"/>
-                    <input className="from-inp" type="text" placeholder="Номер телефона"/>
+                <form className="form__inp-container" onSubmit={formHandler}>
+                    <input className="from-inp" type="text" value={personInfo.name} onChange={inputHandler} placeholder="Имя, Фамилия" name="name"/>
+                    <input className="from-inp" type="text" value={personInfo.phone} onChange={inputHandler} placeholder="Номер телефона" name="phone"/>
                     <button className="form-btn">Отправить</button>
                 </form>
             </div>
