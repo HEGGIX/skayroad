@@ -11,4 +11,9 @@
     margin: 70px 0 135px 0;
     border: none;
     border-radius: 90px;
+    cursor: pointer;
+    &:hover{
+        background: rgb(51, 79, 88);
+        transition: 0.3s all;
+    }
 }

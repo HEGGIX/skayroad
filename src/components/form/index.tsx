@@ -3,13 +3,15 @@ import "../form/styles/style.scss"
 import "../form/styles/styleMedia.scss"
 import { RequestContext } from "../../context"
 import close from "../../assets/images/close.png"
+import useCreateRequest from "../../hooks/useCreateRequest"
 
 const Form = () => {
     const requestContext = useContext(RequestContext)
     const [personInfo,setPersonInfo] = useState({name:"",phone:""})
-    const formHandler=(event:React.ChangeEvent<HTMLFormElement>)=>{
+    const formHandler= (event:React.ChangeEvent<HTMLFormElement>) =>{
         event?.preventDefault()
         requestContext?.setRequest(!requestContext.request)
+        useCreateRequest(personInfo.name,personInfo.phone)
     }
     const inputHandler=(event:React.ChangeEvent<HTMLInputElement>)=>{
         const {value,name}=event.target

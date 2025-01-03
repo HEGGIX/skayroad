@@ -79,6 +79,11 @@
                 color: rgba(255, 255, 255, 1);
                 border: none;
                 border-radius: 13px;
+                cursor: pointer;
+                &:hover{
+                    background: rgb(51, 79, 88);
+                    transition: 0.3s all;
+                }
             }
         }
     }

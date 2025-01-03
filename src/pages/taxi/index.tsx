@@ -8,6 +8,7 @@ import MapPoint from "../../sections/map"
 import OfferSection from "../../sections/offer"
 import Rent from "../../sections/rent"
 import Start from "../../sections/start"
+import { ToastContainer } from "react-toastify"
 
 const TaxiPage = () => {
     const [request,setRequest] = useState(false)
@@ -22,6 +23,7 @@ const TaxiPage = () => {
             <MapPoint/>
             <Footer/>
             <Form/>
+            <ToastContainer />
         </RequestContext.Provider>
         </>
     )
