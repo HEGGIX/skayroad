@@ -1,3 +1,4 @@
-import React from "react"; 
+import { createContext } from "react";
+import { IRequestContext } from "../types";
 
-export const RequestContext = React.createContext({})
+export const RequestContext =createContext<IRequestContext|undefined>(undefined)

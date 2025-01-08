@@ -25,7 +25,7 @@ const Form = () => {
     }
     console.log(personInfo)
     return(
-        <div className={requestContext.request === false ? "form hide" : "form"}>
+        <div className={requestContext!.request === false ? "form hide" : "form"}>
             <div className="form-wrapper">
                 <div className="form__close-btn__container">
                     <button className="form__close-btn" onClick={closeHandler}><img src={close} alt="close"/></button>
