@@ -7,7 +7,7 @@ import StartInfoBox from "../../ui-components/startInfoBox"
 
 const startInfoBoxData: IStartInfoBox [] = [
     {title: "Оставьте заявку на сайте",text:"Мы перезвоним для уточнения деталей"},
-    {title: "Скачайте приложение Яндекс PRO",text:"Мы перезвоним для уточнения деталей"},
+    {title: "Скачайте приложение Яндекс PRO",text:"Пройдите короткий тренинг"},
     {title: "Выходите на линию",text:"Получайте первые заказы и зарабатывайте"}
 ]
 

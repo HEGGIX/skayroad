@@ -25,7 +25,7 @@
         .footer-wrapper{
             max-width: 1220px;
             .third{
-                width: 42%;
+                width: 37%;
             }
         }
     }
@@ -36,7 +36,7 @@
         .footer-wrapper{
             max-width: 1170px;
             .third{
-                width: 42%;
+                width: 39%;
             }
         }
     }
@@ -45,9 +45,15 @@
 @media (max-width: 1230px){
     .footer{
         .footer-wrapper{
-            max-width: 1120px;
-            .third{
-                width: 42%;
+            max-width: 1080px;
+            .footer-column{
+                &.third{
+                    width: 37%;
+                }
+                .footer-column__text{
+                    font-size: 22px;
+                    line-height: 34px;
+                }
             }
         }
     }
@@ -56,13 +62,13 @@
 @media (max-width: 1170px){
     .footer{
         .footer-wrapper{
-            max-width: 1050px;
+            max-width: 1040px;
             .footer-column{
                 &.third{
-                    width: 42%;
+                    width: 40%;
                 }
                 .footer-column__text{
-                    font-size: 24px;
+                    font-size: 22px;
                     line-height: 34px;
                 }
             }

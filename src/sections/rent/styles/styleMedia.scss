@@ -1,9 +1,115 @@
-@media (max-width: 1150px){
+@media (max-width: 1700px){
     .rent{
         .rent-wrapper{
             .rent-text{
+               margin: 50px 0 0 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 50px 0 0 90px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1550px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 40px 0 0 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1510px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 40px 0 0 115px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1480px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 35px 0 0 125px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1450px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 25px 0 0 135px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 15px 0 0 135px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px){
+    .rent{
+        height: 460px;
+        .rent-wrapper{
+            .rent-text{
+               margin: 10px 0 0 135px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 10px 0 0 125px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1250px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                font-size: 65px;
+               margin: 10px 0 0 110px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1150px){
+    .rent{
+        height: 400px;
+        .rent-wrapper{
+            .rent-text{
                 width: 45%;
-                margin-left: 35px;
+                margin-top: 0;
+                margin-left: 65px;
             }
         }
     }
@@ -14,7 +120,9 @@
         .rent-wrapper{
             .rent-text{
                 width: 50%;
-                margin-left: 35px;
+                font-size: 60px;
+                line-height: 70px;
+                margin-left: 10px;
             }
         }
     }
@@ -85,8 +193,8 @@
     .rent{
         .rent-wrapper{
             .rent-text{
-                font-size: 58px;
-                line-height: 62px;
+                font-size: 52px;
+                line-height: 58px;
                 &::after{
                     content: url("../../../assets/images/full-car.png");
                     position: absolute;
