@@ -163,16 +163,18 @@
     .offer{
         .offer-wrapper{
             .offer-container{
-                max-width: 410px;
                 .offer-title{
                     font-size: 30px;
                     line-height: 43px;
                 }
-                .offer-info__item{
-                    font-size: 20px;
+                .offer-info{
+                    margin-left: 20px;
+                    .offer-info__item{
+                        font-size: 20px;
+                    }
                 }
                 .request-btn{
-                    width: 70%;
+                    width: 60%;
                     height: 70px;
                     font-size: 22px;
                 }
