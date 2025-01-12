@@ -8,6 +8,7 @@ import useCreateRequest from "../../hooks/useCreateRequest"
 const Form = () => {
     const requestContext = useContext(RequestContext)
     const [personInfo,setPersonInfo] = useState({name:"",phone:""})
+    console.log(personInfo.name)
     const formHandler= (event:React.ChangeEvent<HTMLFormElement>) =>{
         event?.preventDefault()
         requestContext?.setRequest(!requestContext.request)
@@ -34,8 +35,8 @@ const Form = () => {
                     <h2 className="form-title">Оставить заявку</h2>
                 </div>
                 <form className="form__inp-container" onSubmit={formHandler}>
-                    <input className="from-inp" type="text" value={personInfo.name} onChange={inputHandler} placeholder="Имя, Фамилия" name="name"/>
-                    <input className="from-inp" type="text" value={personInfo.phone} onChange={inputHandler} placeholder="Номер телефона" name="phone"/>
+                    <input className="from-inp" type="text" value={personInfo.name} onChange={inputHandler} placeholder="Имя, Фамилия" name="name" required/>
+                    <input className="from-inp" type="text" value={personInfo.phone} onChange={inputHandler} placeholder="Номер телефона" name="phone" required/>
                     <button className="form-btn">Отправить</button>
                 </form>
             </div>

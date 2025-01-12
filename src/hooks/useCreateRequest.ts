@@ -10,7 +10,8 @@ const useCreateRequest = async (name:string,phone:string): Promise<void> => {
             autoClose: 2500,
             pauseOnHover: false,
             pauseOnFocusLoss: false
-          });
+        });
+
     }
     catch(error){
         return rejectWithValue((error as Error).message)
