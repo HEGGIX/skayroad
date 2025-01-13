@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <footer className="footer">
             <div className="footer-wrapper">
-                <div className="footer-column">
+                <div className="footer-column first">
                     <span className="footer-column__text">© 2024 – Все права защищены</span>
                     <span className="footer-column__text"><br/>Адрес: БЕЛАРУСЬ,<br/> г. Минск ул.Берута 3Б, 415 каб.</span>
                 </div>

@@ -1,20 +1,20 @@
 .rent{
-    height: 550px;
+    height: 500px;
     background: linear-gradient(180deg, #FFFFFF 0%, #ECECEC 100%);
     .rent-wrapper{
         display: flex;
         .rent-img{
-            width: 42%;
+            width: 40%;
         }
         .rent-text{
-            width: 43%;
+            width: 44%;
             font-family: "Oswald", sans-serif;
-            font-size: 70px;
+            font-size: 60px;
             font-weight: 600;
-            line-height: 80px;
+            line-height: 70px;
             text-align: right;
             text-transform: uppercase;
-            margin: 100px 0 0 20px;
+            margin-top: 100px;
             color: rgba(26, 46, 53, 1);
         }
     }

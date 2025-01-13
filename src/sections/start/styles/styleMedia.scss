@@ -13,6 +13,9 @@
 @media (max-width: 1290px){
     .start-wrapper{
         max-width: 1200px;
+        .start__btn-container{
+            width: 35%;
+        }
     }
 }
 
@@ -28,9 +31,6 @@
 @media (max-width: 1180px){
     .start-wrapper{
         max-width: 1080px;
-        .start__btn-container{
-            width: 33%;
-        }
         .start__info-container{
             width: 60%;
         }

@@ -1,7 +1,34 @@
+@media (max-width: 1800px){
+    .offer{
+        .offer-bg{
+            left: 500px;
+        }
+    }
+}
+
+@media (max-width: 1700px){
+    .offer{
+        .offer-bg{
+            left: 420px;
+        }
+    }
+}
+
+@media (max-width: 1650px){
+    .offer{
+        .offer-bg{
+            left: 350px;
+        }
+    }
+}
+
 @media (max-width: 1530px){
     .offer{
         .offer-wrapper{
             width: 60.5%;
+        }
+        .offer-bg{
+            left: 200px;
         }
     }
 }

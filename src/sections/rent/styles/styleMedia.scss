@@ -1,5 +1,6 @@
 @media (max-width: 1700px){
     .rent{
+        height: 450px;
         .rent-wrapper{
             .rent-text{
                margin: 50px 0 0 80px;
@@ -20,6 +21,7 @@
 
 @media (max-width: 1550px){
     .rent{
+        height: 390px;
         .rent-wrapper{
             .rent-text{
                margin: 40px 0 0 100px;
@@ -52,7 +54,7 @@
     .rent{
         .rent-wrapper{
             .rent-text{
-               margin: 25px 0 0 135px;
+               margin: 35px 0 0 135px;
             }
         }
     }
@@ -62,7 +64,7 @@
     .rent{
         .rent-wrapper{
             .rent-text{
-               margin: 15px 0 0 135px;
+               margin: 25px 0 0 135px;
             }
         }
     }
@@ -70,10 +72,11 @@
 
 @media (max-width: 1350px){
     .rent{
-        height: 460px;
+        height: 380px;
         .rent-wrapper{
             .rent-text{
-               margin: 10px 0 0 135px;
+                width: auto;
+               margin: 40px 0 0 135px;
             }
         }
     }
@@ -95,21 +98,29 @@
         .rent-wrapper{
             .rent-text{
                 font-size: 65px;
-               margin: 10px 0 0 110px;
+               margin: 40px 0 0 70px;
             }
         }
     }
 }
 
+@media (max-width: 1200px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+               margin: 40px 0 0 50px;
+            }
+        }
+    }
+}
 
 @media (max-width: 1150px){
     .rent{
-        height: 400px;
         .rent-wrapper{
             .rent-text{
-                width: 45%;
-                margin-top: 0;
+                width: auto;
                 margin-left: 65px;
+                font-size: 58px;
             }
         }
     }
@@ -117,12 +128,13 @@
 
 @media (max-width: 1100px){
     .rent{
+        height: 350px;
         .rent-wrapper{
             .rent-text{
-                width: 50%;
-                font-size: 60px;
-                line-height: 70px;
-                margin-left: 10px;
+                width: auto;
+                font-size: 56px;
+                line-height: 65px;
+                margin-left: 60px;
             }
         }
     }

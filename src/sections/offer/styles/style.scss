@@ -13,31 +13,31 @@
         .offer-title{
             width: 100%;
             font-family: "Oswald", sans-serif;
-            font-size: 70px;
+            font-size: 60px;
             font-weight: 600;
-            line-height: 80px;
+            line-height: 70px;
             text-transform: uppercase;
             color: #1A2E35;
         }
         .offer-info{
-            margin-left: 40px;
+            margin-left: 30px;
             list-style-type: circle;
             .offer-info__item{
                 font-family: Montserrat,sans-serif;
-                font-size: 30px;
+                font-size: 26px;
                 font-weight: 400;
-                line-height: 32px;
+                line-height: 30px;
                 margin-top: 25px;
                 color:#1A2E35;
                 &:first-child{
-                    margin-top: 55px;
+                    margin-top: 45px;
                 }
             }
         }
     } 
     .offer-bg{
         position: absolute;
-        left: 424px;
+        left: 585px;
         .offer-bg__img{
             width: 100%;
         }

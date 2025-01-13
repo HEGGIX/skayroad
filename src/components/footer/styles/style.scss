@@ -5,18 +5,21 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 70px 0;
+        padding: 50px 0;
     }
     .footer-column{
-        width: 25%;
+        width: 23%;
         &.third{
-            width: 42%;
+            width: 40%;
+        }
+        &.first{
+            width: 30%;
         }
         .footer-column__text{
             font-family: "Montserrat",sans-serif;
-            font-size: 26px;
+            font-size: 23px;
             font-weight: 500;
-            line-height: 39.01px;
+            line-height: 39px;
             text-align: left;
             color: rgba(255, 255, 255, 1);
         }
