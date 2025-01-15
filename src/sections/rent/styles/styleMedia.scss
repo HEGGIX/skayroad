@@ -140,97 +140,140 @@
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1030px){
     .rent{
-        height: 650px;
-        .rent-wrapper{
-            display: flex;
-            justify-content: center;
-            .rent-img{
-                display: none;
-            }
-            .rent-text{
-                width: 80%;
-                font-size: 64px;
-                line-height: 70px;
-                margin: 0;
-                position: relative;
-                text-align: center;
-                &::after{
-                    content: url("../../../assets/images/full-car.png");
-                    position: absolute;
-                    right: 65px;
-                    top: 290px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 890px){
-    .rent{
-        .rent-wrapper{
-            .rent-text{
-                font-size: 58px;
-                line-height: 62px;
-                &::after{
-                    content: url("../../../assets/images/full-car.png");
-                    position: absolute;
-                    right: 20px;
-                    top: 250px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 800px){
-    .rent{
-        .rent-wrapper{
-            .rent-text{
-                font-size: 58px;
-                line-height: 62px;
-                &::after{
-                    content: url("../../../assets/images/full-car.png");
-                    position: absolute;
-                    right: 0px;
-                    top: 270px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 767px){
-    .rent{
+        height: 300px;
         .rent-wrapper{
             .rent-text{
                 font-size: 52px;
-                line-height: 58px;
-                &::after{
-                    content: url("../../../assets/images/full-car.png");
-                    position: absolute;
-                    left: -45px;
-                    top: 270px;
-                }
+                margin-top: 10px;
+                margin-left: 70px;
             }
         }
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 990px){
     .rent{
-        height: 540px;
+        height: 300px;
         .rent-wrapper{
             .rent-text{
+                font-size: 50px;
+                line-height: 60px;
+                margin-top: 10px;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px){
+    .rent{
+        height: 280px;
+        .rent-wrapper{
+            display: block;
+            .rent-img{
+                position: absolute;
+                width: 47%;
+            }
+            .rent-text{
                 font-size: 46px;
-                line-height: 54px;
-                &::after{
-                    content: url("../../../assets/images/full-car (470px).png");
-                    position: absolute;
-                    left: -45px;
-                    top: 240px;
-                }
+                line-height: 55px;
+                margin-right: 40px;
+                padding-top: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                font-size: 44px;
+                line-height: 52px;
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 870px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                font-size: 40px;
+                line-height: 50px;
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 810px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .rent{
+        height: 260px;
+        .rent-wrapper{
+            .rent-text{
+                font-size: 38px;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .rent{
+        height: 250px;
+        .rent-wrapper{
+            .rent-text{
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px){
+    .rent{
+        height: 250px;
+        .rent-wrapper{
+            .rent-text{
+                font-size: 34px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+
+@media (max-width: 690px){
+    .rent{
+        height: 230px;
+        .rent-wrapper{
+            .rent-text{
+                font-size: 31px;
+                line-height: 40px;
+                margin-right: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                font-size: 29px;
             }
         }
     }
@@ -238,31 +281,34 @@
 
 @media (max-width: 600px){
     .rent{
+        height: 220px;
         .rent-wrapper{
             .rent-text{
-                &::after{
-                    content: url("../../../assets/images/full-car (470px).png");
-                    left: -20px;
-                    top: 240px;
-                }
+                font-size: 27px;
+                line-height: 36px;
             }
         }
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 570px){
     .rent{
-        height: 540px;
+        height: 210px;
         .rent-wrapper{
             .rent-text{
-                font-size: 40px;
-                line-height: 50px;
-                &::after{
-                    content: url("../../../assets/images/full-car (470px).png");
-                    position: absolute;
-                    left: -25px;
-                    top: 220px;
-                }
+                line-height: 34px;
+                margin-right: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                font-size: 26px;
+                line-height: 32px;
             }
         }
     }
@@ -270,90 +316,269 @@
 
 @media (max-width: 530px){
     .rent{
-        height: 480px;
         .rent-wrapper{
             .rent-text{
-                font-size: 40px;
-                line-height: 50px;
-                &::after{
-                    content: url("../../../assets/images/full-car (350px).png");
-                    position: absolute;
-                    left: -25px;
-                    top: 210px;
+                line-height: 30px;
+                margin-right: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: 510px){
+    .rent{
+        height: 200px;
+        .rent-wrapper{
+            .rent-text{
+                margin-right: 23px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                position: absolute;
+                left: 180px;
+                width: 44%;
+                padding-top: 10px;
+                .rent-text__transfer{
+                    display: none;
                 }
             }
         }
     }
 }
 
-@media (max-width: 490px){
+@media (max-width: 480px){
     .rent{
-        height: 450px;
         .rent-wrapper{
+            .rent-img{
+                width: 55%;
+            }
             .rent-text{
-                font-size: 36px;
-                line-height: 46px;
-                &::after{
-                    content: url("../../../assets/images/full-car (350px).png");
-                    position: absolute;
-                    left: -25px;
-                    top: 190px;
-                }
+                width: 45%;
             }
         }
     }
 }
 
-@media (max-width: 445px){
-    .rent{
-        height: 440px;
-        .rent-wrapper{
-            .rent-text{
-                font-size: 32px;
-                line-height: 44px;
-                &::after{
-                    content: url("../../../assets/images/full-car (350px).png");
-                    position: absolute;
-                    left: -25px;
-                    top: 170px;
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 1000px){
+//     .rent{
+//         height: 650px;
+//         .rent-wrapper{
+//             display: flex;
+//             justify-content: center;
+//             .rent-img{
+//                 display: none;
+//             }
+//             .rent-text{
+//                 width: 80%;
+//                 font-size: 64px;
+//                 line-height: 70px;
+//                 margin: 0;
+//                 position: relative;
+//                 text-align: center;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car.png");
+//                     position: absolute;
+//                     right: 65px;
+//                     top: 290px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 395px){
-    .rent{
-        height: 380px;
-        .rent-wrapper{
-            .rent-text{
-                font-size: 28px;
-                line-height: 40px;
-                &::after{
-                    content: url("../../../assets/images/full-car (280px).png");
-                    position: absolute;
-                    left: -25px;
-                    top: 170px;
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 890px){
+//     .rent{
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 58px;
+//                 line-height: 62px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car.png");
+//                     position: absolute;
+//                     right: 20px;
+//                     top: 250px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 348px){
-    .rent{
-        height: 350px;
-        .rent-wrapper{
-            .rent-text{
-                font-size: 25px;
-                line-height: 35px;
-                &::after{
-                    content: url("../../../assets/images/full-car (280px).png");
-                    position: absolute;
-                    left: -12px;
-                    top: 150px;
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 800px){
+//     .rent{
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 58px;
+//                 line-height: 62px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car.png");
+//                     position: absolute;
+//                     right: 0px;
+//                     top: 270px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 767px){
+//     .rent{
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 52px;
+//                 line-height: 58px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car.png");
+//                     position: absolute;
+//                     left: -45px;
+//                     top: 270px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 700px){
+//     .rent{
+//         height: 540px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 46px;
+//                 line-height: 54px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (470px).png");
+//                     position: absolute;
+//                     left: -45px;
+//                     top: 240px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 600px){
+//     .rent{
+//         .rent-wrapper{
+//             .rent-text{
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (470px).png");
+//                     left: -20px;
+//                     top: 240px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 560px){
+//     .rent{
+//         height: 540px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 40px;
+//                 line-height: 50px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (470px).png");
+//                     position: absolute;
+//                     left: -25px;
+//                     top: 220px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 530px){
+//     .rent{
+//         height: 480px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 40px;
+//                 line-height: 50px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (350px).png");
+//                     position: absolute;
+//                     left: -25px;
+//                     top: 210px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 490px){
+//     .rent{
+//         height: 450px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 36px;
+//                 line-height: 46px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (350px).png");
+//                     position: absolute;
+//                     left: -25px;
+//                     top: 190px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 445px){
+//     .rent{
+//         height: 440px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 32px;
+//                 line-height: 44px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (350px).png");
+//                     position: absolute;
+//                     left: -25px;
+//                     top: 170px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 395px){
+//     .rent{
+//         height: 380px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 28px;
+//                 line-height: 40px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (280px).png");
+//                     position: absolute;
+//                     left: -25px;
+//                     top: 170px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 348px){
+//     .rent{
+//         height: 350px;
+//         .rent-wrapper{
+//             .rent-text{
+//                 font-size: 25px;
+//                 line-height: 35px;
+//                 &::after{
+//                     content: url("../../../assets/images/full-car (280px).png");
+//                     position: absolute;
+//                     left: -12px;
+//                     top: 150px;
+//                 }
+//             }
+//         }
+//     }
+// }
