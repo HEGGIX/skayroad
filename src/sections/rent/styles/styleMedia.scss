@@ -365,6 +365,155 @@
     }
 }
 
+@media (max-width: 450px){
+    .rent{
+        height: 190px;
+        .rent-wrapper{
+            .rent-img{
+                width: 53%;
+            }
+            .rent-text{
+                width: 42%;
+                font-size: 25px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                width: 41%;
+                left: 170px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                width: 43%;
+                left: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                width: 43%;
+                left: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .rent{
+        height: 180px;
+        .rent-wrapper{
+            .rent-text{
+                width: 44%;
+                left: 150px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .rent{
+        height: 170px;
+        .rent-wrapper{
+            .rent-img{
+                width: 51%;
+            }
+            .rent-text{
+                width: 45%;
+                left: 145px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                width: 46%;
+                left: 135px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                width: 46%;
+                left: 125px;
+                font-size: 23px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .rent{
+        height: 160px;
+        .rent-wrapper{
+            .rent-text{
+                width: 48%;
+                left: 115px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 340px){
+    .rent{
+        .rent-wrapper{
+            .rent-text{
+                left: 110px;
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+@media (max-width: 330px){
+    .rent{
+        height: 150px;
+        .rent-wrapper{
+            .rent-text{
+                left: 100px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .rent{
+        height: 140px;
+        .rent-wrapper{
+            .rent-text{
+                left: 95px;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+}
 // @media (max-width: 1000px){
 //     .rent{
 //         height: 650px;
