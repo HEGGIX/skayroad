@@ -35,8 +35,8 @@ const Form = () => {
                     <h2 className="form-title">Оставить заявку</h2>
                 </div>
                 <form className="form__inp-container" onSubmit={formHandler}>
-                    <input className="from-inp" type="text" value={personInfo.name} onChange={inputHandler} placeholder="Имя, Фамилия" name="name" required/>
-                    <input className="from-inp" type="text" value={personInfo.phone} onChange={inputHandler} placeholder="Номер телефона" name="phone" required/>
+                    <input className="form-inp" type="text" value={personInfo.name} onChange={inputHandler} placeholder="Имя, Фамилия" name="name" required/>
+                    <input className="form-inp" type="text" value={personInfo.phone} onChange={inputHandler} placeholder="Номер телефона" name="phone" required/>
                     <button className="form-btn">Отправить</button>
                 </form>
             </div>

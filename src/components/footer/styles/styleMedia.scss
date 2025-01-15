@@ -13,8 +13,11 @@
     .footer{
         .footer-wrapper{
             max-width: 1280px;
+            .first{
+                width: 32%;
+            }
             .third{
-                width: 45%;
+                width: 40%;
             }
         }
     }
@@ -25,7 +28,11 @@
         .footer-wrapper{
             max-width: 1220px;
             .third{
-                width: 37%;
+                width: 42%;
+            }
+            .footer-column__text{
+                font-size: 21px;
+                line-height: 39px;
             }
         }
     }
@@ -35,9 +42,6 @@
     .footer{
         .footer-wrapper{
             max-width: 1170px;
-            .third{
-                width: 39%;
-            }
         }
     }
 }
@@ -45,14 +49,16 @@
 @media (max-width: 1230px){
     .footer{
         .footer-wrapper{
-            max-width: 1080px;
+            max-width: 1110px;
             .footer-column{
+                &.first{
+                    width: 34%;
+                }
                 &.third{
-                    width: 37%;
+                    margin-left: 10px;
                 }
                 .footer-column__text{
-                    font-size: 22px;
-                    line-height: 34px;
+                    font-size: 20px;
                 }
             }
         }
@@ -64,12 +70,8 @@
         .footer-wrapper{
             max-width: 1040px;
             .footer-column{
-                &.third{
-                    width: 40%;
-                }
                 .footer-column__text{
-                    font-size: 22px;
-                    line-height: 34px;
+                    font-size: 19px;
                 }
             }
         }
@@ -88,9 +90,11 @@
     .footer{
         .footer-wrapper{
             max-width: 940px;
-            .third{
-                width: 41%;
-            }
+            .footer-column{
+                .footer-column__text{
+                    font-size: 17px;
+                    }
+                }
         }
     }
 }
@@ -105,6 +109,9 @@
             width: 80%;
             margin-bottom: 30px;
             text-align: center;
+            &.first{
+                width: 80%;
+            }
             &.third{
                 width: 80%;
             }

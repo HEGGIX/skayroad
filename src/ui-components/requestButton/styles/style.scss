@@ -1,19 +1,20 @@
 .request-btn{
     width: 35%;
     height: 90px;
-    background: rgba(26, 46, 53, 1);
+    background: rgba(255, 200, 0, 1);
     font-family: Montserrat,sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 39px;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(26, 46, 53, 1);
     margin: 50px 0 135px 0;
     border: none;
-    border-radius: 45px;
+    border: 1px solid rgba(26, 46, 53, 1);
+    border-radius: 35px;
     cursor: pointer;
     &:hover{
-        background: rgb(51, 79, 88);
+        background:rgb(170, 136, 12);
         transition: 0.3s all;
     }
 }

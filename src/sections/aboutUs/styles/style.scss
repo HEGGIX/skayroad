@@ -1,21 +1,21 @@
 .aboutUs{
     .aboutUs-wrapper{
-        max-width: 1360px;
+        max-width: 1640px;
         margin: 0 auto;
-    }
-    .aboutUs-title{
-        font-family: "Oswald", sans-serif;
-        font-size: 60px;
-        font-weight: 600;
-        line-height: 70px;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 90px 0;
-        color: rgba(26, 46, 53, 1);
-    }
-    .aboutUs-info{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 190px;
+        .aboutUs-title{
+            font-family: "Oswald", sans-serif;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 70px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 90px 0;
+            color: rgba(26, 46, 53, 1);
+        }
+        .aboutUs-info{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 190px;
+        }
     }
 }

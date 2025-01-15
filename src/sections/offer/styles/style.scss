@@ -20,8 +20,9 @@
             color: #1A2E35;
         }
         .offer-info{
-            margin-left: 30px;
-            list-style-type: circle;
+            margin-left: 20px;
+            // list-style-type: circle;
+            list-style-image:url("../../../assets/images/list-marker.png");
             .offer-info__item{
                 font-family: Montserrat,sans-serif;
                 font-size: 26px;
