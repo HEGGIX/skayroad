@@ -60,9 +60,11 @@
     .header{
         .header-wrapper{
             max-width: 620px;
-            .header-phone{
-                font-size: 22px;
-                line-height: 25px;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 22px;
+                    line-height: 25px;
+                }
             }
         }
     }
@@ -72,9 +74,11 @@
     .header{
         .header-wrapper{
             max-width: 560px;
-            .header-phone{
-                font-size: 21px;
-                line-height: 25px;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 21px;
+                    line-height: 25px;
+                }
             }
         }
         .header-img{
@@ -87,9 +91,11 @@
     .header{
         .header-wrapper{
             max-width: 500px;
-            .header-phone{
-                font-size: 21px;
-                line-height: 25px;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 21px;
+                    line-height: 25px;
+                }
             }
         }
         .header-img{
@@ -100,12 +106,15 @@
 
 @media (max-width: 550px){
     .header{
-        height: 190px;
+        height: 170px;
         .header-wrapper{
             max-width: 460px;
-            .header-phone{
-                font-size: 19px;
-                line-height: 23px;
+            padding: 40px 0;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 19px;
+                    line-height: 23px;
+                }
             }
         }
     }
@@ -121,15 +130,17 @@
 
 @media (max-width: 450px){
     .header{
-        height: 180px;
+        height: 160px;
         .header-wrapper{
             max-width: 340px;
             .header-img{
                 width: 40%;
             }
-            .header-phone{
-                font-size: 18px;
-                line-height: 21px;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 18px;
+                    line-height: 21px;
+                }
             }
         }
     }
@@ -138,9 +149,11 @@
 @media (max-width: 390px){
     .header{
         .header-wrapper{
-            .header-phone{
-                font-size: 17px;
-                line-height: 20px;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 17px;
+                    line-height: 20px;
+                }
             }
         }
     }
@@ -148,7 +161,7 @@
 
 @media (max-width: 380px){
     .header{
-        height: 170px;
+        height: 150px;
         .header-wrapper{
             max-width: 300px;
         }
@@ -157,12 +170,13 @@
 
 @media (max-width: 350px){
     .header{
-        height: 150px;
         .header-wrapper{
             max-width: 280px;
-            .header-phone{
-                font-size: 16px;
-                line-height: 19px;
+            .header-phone__container{
+                .header-phone{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
             }
         }
     }
