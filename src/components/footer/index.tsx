@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-wrapper">
                 <div className="footer-column first">
                     <span className="footer-column__text">© 2024 – Все права защищены</span>
-                    <span className="footer-column__text"><br/>Адрес: БЕЛАРУСЬ, г. Минск,<br/> ул. Каменногорская, 47, оф. 1-42.</span>
+                    <span className="footer-column__text"><br/>Адрес: БЕЛАРУСЬ, г. Минск,<br/>Берута 3Б, 415 каб.</span>
                 </div>
                 <div className="footer-column">
                     <span className="footer-column__text">График работы офиса:</span>

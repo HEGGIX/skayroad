@@ -9,11 +9,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .header-phone{
-            font-family: Montserrat, sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 32px;
+        .header-phone__container{
+            display: flex;
+            flex-direction: column;
+            .header-phone{
+                font-family: Montserrat, sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                &.second{
+                    letter-spacing: 0.5px;
+                }
+            }
         }
         .header-img{
             width: 30%;

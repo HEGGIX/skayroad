@@ -6,8 +6,8 @@ const MapPoint = () => {
     return(
         <YMaps>
             <div className="map-wrapper">
-                <Map className="map" defaultState={{ center: [53.934721, 27.427892], zoom: 17 }}>
-                    <Placemark defaultGeometry={[53.934721, 27.427892]} />
+                <Map className="map" defaultState={{ center: [53.905504, 27.502731], zoom: 17 }}>
+                    <Placemark defaultGeometry={[53.905504, 27.502731]} />
                 </Map>
             </div>
         </YMaps>

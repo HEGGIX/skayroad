@@ -7,7 +7,10 @@ const Header = () => {
         <header className="header">
             <div className="header-wrapper">
                 <img className = "header-img" src={logo} alt="logo" />
-                <span className="header-phone">+375(33)3974844<br/>+375(44)7412269</span>
+                <div className="header-phone__container">
+                    <span className="header-phone">+375(33)3974844</span>
+                    <span className="header-phone second">+375(44)7412269</span>
+                </div>
             </div>
         </header>
     )
