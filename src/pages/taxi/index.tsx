@@ -8,6 +8,9 @@ import MapPoint from "../../sections/map"
 import OfferSection from "../../sections/offer"
 import Rent from "../../sections/rent"
 import Start from "../../sections/start"
+import FormSection from "../../sections/form"
+import WorkConditionsSection from "../../sections/conditions";
+import RegistrySection from "../../sections/registry";
 import { ToastContainer } from "react-toastify"
 
 const TaxiPage = () => {
@@ -17,7 +20,10 @@ const TaxiPage = () => {
         <RequestContext.Provider value={{request:request,setRequest:setRequest}}>
             <Header/>
             <OfferSection/>
+            <FormSection/>
+            <WorkConditionsSection/>
             <AboutUs/>
+            <RegistrySection/>
             <Rent/>
             <Start/>
             <MapPoint/>

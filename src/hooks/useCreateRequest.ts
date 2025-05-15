@@ -1,11 +1,22 @@
 import sendMessage from "../api/telegramApi"
 import { toast } from "react-toastify"
 
-const useCreateRequest = async (name:string,phone:string): Promise<void> => {
-    try{
-        const message = `Имя,Фамилия: ${name}, номер телефона: ${phone}`
+const useCreateRequest = async (
+    name: string,
+    phone: string,
+    city: string,
+    vacancy: string
+): Promise<void> => {
+    try {
+        const message = `
+            Имя, Фамилия: ${name}
+            Телефон: ${phone}
+            Город: ${city}
+            Вакансия: ${vacancy}
+        `
         await sendMessage(message)
-        toast.success("Ваша зявка отправлена!", {
+
+        toast.success("Ваша заявка отправлена!", {
             position: "top-right",
             autoClose: 2500,
             pauseOnHover: false,

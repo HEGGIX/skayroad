@@ -1,0 +1,21 @@
+.registry-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 20px 60px 20px;
+
+    .registry-block {
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-family: "Oswald", sans-serif;
+        font-size: clamp(40px, 1.32vw, 60px);
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 90px 0;
+        color: rgb(26, 46, 53);
+    }
+}

@@ -1,43 +1,27 @@
 @media (max-width: 1530px){
     .header{
-        width: 60.5%;
-    }
-}
+        .header-wrapper {
+            padding: 25px;
 
-@media (max-width: 1400px){
-    .header{
-        width: 65.5%;
-    }
-}
-
-@media (max-width: 1305px){
-    .header{
-        width: 70.5%;
-    }
-}
-
-@media (max-width: 1250px){
-    .header{
-        width: 73.5%;
-    }
-}
-
-@media (max-width: 1150px){
-    .header{
-        width: 78.5%;
+            .header-nav {
+                .nav-list {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 1080px){
     .header{
-        width: 83.5%;
+        .header-wrapper {
+            margin: 0 20px;
+        }
     }
 }
 
 @media (max-width: 1020px){
-    .header{
-        width: 100%;
-    }
+
 }
 
 @media (max-width: 860px){
@@ -52,6 +36,13 @@
     .header{
         .header-wrapper{
             max-width: 700px;
+
+            .header-phone__container {
+                display: flex;
+            }
+        }
+        .header-nav {
+            display: none;
         }
     }
 }
@@ -60,11 +51,20 @@
     .header{
         .header-wrapper{
             max-width: 620px;
+            margin: 0 35px;
             .header-phone__container{
+                display: flex;
                 .header-phone{
                     font-size: 22px;
                     line-height: 25px;
                 }
+            }
+            .header-nav {
+                display: none;
+            }
+            .header-title {
+                font-size: 16px;
+                line-height: 25px;
             }
         }
     }
@@ -109,7 +109,8 @@
         height: 170px;
         .header-wrapper{
             max-width: 460px;
-            padding: 40px 0;
+            padding: 40px 20px;
+            margin: 0 10px;
             .header-phone__container{
                 .header-phone{
                     font-size: 19px;
@@ -120,19 +121,10 @@
     }
 }
 
-@media (max-width: 510px){
-    .header{
-        .header-wrapper{
-            max-width: 410px;
-        }
-    }
-}
-
 @media (max-width: 450px){
     .header{
         height: 160px;
         .header-wrapper{
-            max-width: 340px;
             .header-img{
                 width: 40%;
             }
@@ -162,9 +154,6 @@
 @media (max-width: 380px){
     .header{
         height: 150px;
-        .header-wrapper{
-            max-width: 300px;
-        }
     }
 }
 

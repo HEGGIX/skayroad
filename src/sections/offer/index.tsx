@@ -1,7 +1,8 @@
 import "../offer/styles/style.scss"
 import "../offer/styles/styleMedia.scss"
-import car from "../../assets/images/Geely.png"
-import RequestButton from "../../ui-components/requestButton"
+import videoBg from "../../assets/videos/taxi.mp4"
+import posterImg from "../../assets/images/taxi-poster.jpg"
+import mobilePosterImg from "../../assets/images/taxi-poster-mobile.jpg"
 
 const OfferSection = () => {
     return(
@@ -11,17 +12,30 @@ const OfferSection = () => {
                     <h1 className="offer-title">Работа водителем <br/> в Яндекс Такси</h1>
                     <ul className="offer-info">
                         <li className="offer-info__item">Официальное трудоустройство</li>
-                        <li className="offer-info__item">Заключение трудового договора</li>
-                        <li className="offer-info__item">Бесплатное вступление в реестр</li>
-                        <li className="offer-info__item">Предоставление карты таксиста</li>
-                        <li className="offer-info__item">Помощь в получении курсов <br/> повышения квалификации</li>
-                        <li className="offer-info__item">Бейджик, тарифы</li>
+                        <li className="offer-info__item">Еженедельные выплаты на карту</li>
+                        <li className="offer-info__item">Бонусная система от Яндекс/Парка.</li>
+                        <li className="offer-info__item">Заявление в реестр + бейдж с тарифами
+                            <br/> за наш счёт
+                        </li>
+                        <li className="offer-info__item">Поддержка 24/7</li>
                     </ul>
-                    <RequestButton/>
                 </div>
             </div>
             <div className="offer-bg">
-                <img className="offer-bg__img" src={car} alt="car"/>
+                <video
+                    className="offer-bg__video hide-on-mobile"
+                    src={videoBg}
+                    poster={posterImg}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                />
+                <div
+                    className="mobile-image show-on-mobile"
+                    style={{backgroundImage: `url(${mobilePosterImg})`}}
+                ></div>
             </div>
         </div>
     )

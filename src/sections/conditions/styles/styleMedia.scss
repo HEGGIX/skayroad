@@ -1,0 +1,18 @@
+@media (max-width: 1650px){
+  .work-section {
+    .section-title {
+      margin: 20px 0;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .work-section {
+    .section-title {
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+  .start__info-box .start__info-box__img img {
+    width: 30px;
+  }
+}
