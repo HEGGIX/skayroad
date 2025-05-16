@@ -82,7 +82,7 @@ const FormSection = () => {
                             Выберите вакансию
                         </option>
                         <option value="own-car">На личном авто</option>
-                        <option value="rental-car">Арендное авто</option>
+                        <option value="rental-car">На арендном авто</option>
                     </select>
 
                     <label className="form-checkbox__label">

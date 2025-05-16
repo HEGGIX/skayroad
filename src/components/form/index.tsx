@@ -88,7 +88,7 @@ const Form = () => {
                     >
                         <option value="" disabled>Выберите вакансию</option>
                         <option value="own-car">На личном авто</option>
-                        <option value="rental-car">Арендное авто</option>
+                        <option value="rental-car">На арендном авто</option>
                     </select>
                     <button className="form-btn">Отправить</button>
                 </form>
