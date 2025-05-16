@@ -119,7 +119,7 @@
         height: 170px;
         .header-wrapper{
             max-width: 460px;
-            padding: 40px 20px;
+            padding: 20px;
             margin: 0 10px;
             .header-phone__container{
                 .header-phone{
@@ -133,7 +133,7 @@
 
 @media (max-width: 450px){
     .header{
-        height: 160px;
+        height: auto;
         .header-wrapper{
             .header-img{
                 width: 40%;
