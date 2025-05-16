@@ -1,19 +1,24 @@
 .offer{
     display: flex;
+    position: relative;
+    height: 100vh;
+    align-items: center;
     .offer-wrapper{
-        width: 56.5%;
+        width: 43.5%;
         background: rgba(244, 244, 244, 0.6);
         backdrop-filter: blur(10px);
         position: relative;
         z-index: 10;
+        height: fit-content;
+        border-radius: 0 12px 12px 0;
     }
     .offer-container{
+        margin: 40px 55px;
         max-width: 805px;
-        margin: 0 auto;
         .offer-title{
             width: 100%;
             font-family: "Oswald", sans-serif;
-            font-size: 60px;
+            font-size: clamp(40px, 1.32vw, 60px);
             font-weight: 600;
             line-height: 70px;
             text-transform: uppercase;
@@ -24,8 +29,8 @@
             list-style-image:url("../../../assets/images/list-marker.png");
             .offer-info__item{
                 font-family: Montserrat,sans-serif;
-                font-size: 26px;
-                font-weight: 400;
+                font-size: clamp(20px, 1.32vw, 26px);
+                font-weight: 600;
                 line-height: 30px;
                 margin-top: 25px;
                 padding-left: 7px;
@@ -35,12 +40,20 @@
                 }
             }
         }
-    } 
-    .offer-bg{
+    }
+    .offer-bg {
         position: absolute;
-        left: 585px;
-        .offer-bg__img{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+
+        .offer-bg__video {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

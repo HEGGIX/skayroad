@@ -13,7 +13,7 @@ const startInfoBoxData: IStartInfoBox [] = [
 
 const Start = () => {
     return(
-        <div className="start">
+        <div className="start" id={"start"}>
             <div className="start-wrapper">
                 <div className="start__btn-container">
                     <h2 className="start__btn-title">Как начать работать?</h2>
