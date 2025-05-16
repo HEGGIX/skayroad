@@ -1,8 +1,7 @@
 import "../offer/styles/style.scss"
 import "../offer/styles/styleMedia.scss"
-import videoBg from "../../assets/videos/taxi.mp4"
-import posterImg from "../../assets/images/taxi-poster.jpg"
-import mobilePosterImg from "../../assets/images/taxi-poster-mobile.jpg"
+import posterImg from "../../assets/images/PM.png"
+import mobilePosterImg from "../../assets/images/PM-mob.png"
 
 const OfferSection = () => {
     return(
@@ -22,16 +21,10 @@ const OfferSection = () => {
                 </div>
             </div>
             <div className="offer-bg">
-                <video
-                    className="offer-bg__video hide-on-mobile"
-                    src={videoBg}
-                    poster={posterImg}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
-                />
+                <div
+                    className="desctop-image hide-on-mobile"
+                    style={{backgroundImage: `url(${posterImg})`}}
+                ></div>
                 <div
                     className="mobile-image show-on-mobile"
                     style={{backgroundImage: `url(${mobilePosterImg})`}}
