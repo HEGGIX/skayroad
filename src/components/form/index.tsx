@@ -1,9 +1,10 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import "../form/styles/style.scss"
 import "../form/styles/styleMedia.scss"
 import { RequestContext } from "../../context"
 import close from "../../assets/images/close.png"
 import useCreateRequest from "../../hooks/useCreateRequest"
+import { getUTMParams } from "../../utils/getUTMParams"
 
 const Form = () => {
     const requestContext = useContext(RequestContext)
@@ -15,17 +16,28 @@ const Form = () => {
         vacancy: ""
     })
 
+    const [utm, setUtm] = useState<Record<string, string>>({})
+
+    useEffect(() => {
+        setUtm(getUTMParams())
+    }, [])
+
     const formHandler = (event: React.ChangeEvent<HTMLFormElement>) => {
         event.preventDefault()
         requestContext?.setRequest(false)
-        useCreateRequest(personInfo.name, personInfo.phone, personInfo.city, personInfo.vacancy)
+        useCreateRequest(
+            personInfo.name,
+            personInfo.phone,
+            personInfo.city,
+            personInfo.vacancy,
+            utm
+        )
     }
 
     const inputHandler = (
         event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
     ) => {
         const { name, value } = event.target
-
         const selectedText =
             event.target instanceof HTMLSelectElement
                 ? event.target.options[event.target.selectedIndex].text
@@ -36,11 +48,12 @@ const Form = () => {
             [name]: selectedText
         }))
     }
+
     const closeHandler = () => {
         requestContext?.setRequest(false)
     }
-    console.log(personInfo)
-    return(
+
+    return (
         <div className={requestContext!.request === false ? "form hide" : "form"}>
             <div className="form-wrapper">
                 <div className="form__close-btn__container">

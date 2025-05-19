@@ -1,7 +1,8 @@
-import { useState } from "react"
+import {useEffect, useState} from "react"
 import "../form/styles/style.scss"
 import "../form/styles/styleMedia.scss"
 import useCreateRequest from "../../hooks/useCreateRequest"
+import { getUTMParams } from "../../utils/getUTMParams"
 import privacyPolicy from "../../assets/files/privacy-policy.pdf"
 
 const FormSection = () => {
@@ -13,6 +14,11 @@ const FormSection = () => {
     })
 
     const [agree, setAgree] = useState(false)
+    const [utm, setUtm] = useState<Record<string, string>>({})
+
+    useEffect(() => {
+        setUtm(getUTMParams())
+    }, [])
 
     const formHandler = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
@@ -22,7 +28,8 @@ const FormSection = () => {
             personInfo.name,
             personInfo.phone,
             personInfo.city,
-            personInfo.vacancy
+            personInfo.vacancy,
+            utm
         )
     }
 

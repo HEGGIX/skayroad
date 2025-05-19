@@ -5,7 +5,8 @@ const useCreateRequest = async (
     name: string,
     phone: string,
     city: string,
-    vacancy: string
+    vacancy: string,
+    utm?: Record<string, string>
 ): Promise<void> => {
     try {
         const message = `
@@ -13,7 +14,14 @@ const useCreateRequest = async (
             Телефон: ${phone}
             Город: ${city}
             Вакансия: ${vacancy}
-        `
+            ${utm?.utm_source ? `UTM Source: ${utm.utm_source}` : ''}
+            ${utm?.utm_medium ? `UTM Medium: ${utm.utm_medium}` : ''}
+            ${utm?.utm_campaign ? `UTM Campaign: ${utm.utm_campaign}` : ''}
+            ${utm?.utm_content ? `UTM Content: ${utm.utm_content}` : ''}
+            ${utm?.utm_term ? `UTM Term: ${utm.utm_term}` : ''}
+            ${utm?.utm_id ? `UTM ID: ${utm.utm_id}` : ''}
+        `.trim()
+
         await sendMessage(message)
 
         toast.success("Ваша заявка отправлена!", {
@@ -23,8 +31,7 @@ const useCreateRequest = async (
             pauseOnFocusLoss: false
         });
 
-    }
-    catch(error){
+    } catch (error) {
         return rejectWithValue((error as Error).message)
     }
 }
