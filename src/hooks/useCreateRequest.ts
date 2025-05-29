@@ -1,6 +1,11 @@
 import sendMessage from "../api/telegramApi"
 import { toast } from "react-toastify"
 
+const vacancyMap: Record<string, string> = {
+    "own-car": "На личном авто",
+    "rental-car": "На арендном авто (для города Минска)"
+}
+
 const useCreateRequest = async (
     name: string,
     phone: string,
@@ -9,11 +14,13 @@ const useCreateRequest = async (
     utm?: Record<string, string>
 ): Promise<boolean> => {
     try {
+        const readableVacancy = vacancyMap[vacancy] || vacancy
+
         const message = `
             Имя, Фамилия: ${name}
             Телефон: ${phone}
             Город: ${city}
-            Вакансия: ${vacancy}
+            Вакансия: ${readableVacancy}
             ${utm?.utm_source ? `UTM Source: ${utm.utm_source}` : ''}
             ${utm?.utm_medium ? `UTM Medium: ${utm.utm_medium}` : ''}
             ${utm?.utm_campaign ? `UTM Campaign: ${utm.utm_campaign}` : ''}
@@ -38,7 +45,3 @@ const useCreateRequest = async (
     }
 }
 export default useCreateRequest
-
-// function rejectWithValue(message: string): void | PromiseLike<void> {
-//     throw new Error(message)
-// }

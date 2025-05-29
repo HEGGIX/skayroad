@@ -97,13 +97,7 @@ const FormSection = () => {
                         className="form-select"
                         name="vacancy"
                         value={personInfo.vacancy}
-                        onChange={event => {
-                            const selectedText = event.target.options[event.target.selectedIndex].text
-                            setPersonInfo(prev => ({
-                                ...prev,
-                                vacancy: selectedText
-                            }))
-                        }}
+                        onChange={inputHandler}
                         required
                     >
                         <option value="" disabled>
