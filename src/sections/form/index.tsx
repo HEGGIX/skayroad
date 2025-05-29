@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import "../form/styles/style.scss"
 import "../form/styles/styleMedia.scss"
-import useCreateRequest from "../../hooks/useCreateRequest"
+import createRequest from "../../hooks/useCreateRequest"
 import { getUTMParams } from "../../utils/getUTMParams"
 import privacyPolicy from "../../assets/files/privacy-policy.pdf"
 
@@ -15,22 +15,37 @@ const FormSection = () => {
 
     const [agree, setAgree] = useState(false)
     const [utm, setUtm] = useState<Record<string, string>>({})
+    const [isSending, setIsSending] = useState(false)
 
     useEffect(() => {
         setUtm(getUTMParams())
     }, [])
 
-    const formHandler = (event: React.FormEvent<HTMLFormElement>) => {
+    const formHandler = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        if (!agree) return
+        if (!agree || isSending) return
 
-        useCreateRequest(
+        setIsSending(true)
+
+        const success = await createRequest(
             personInfo.name,
             personInfo.phone,
             personInfo.city,
             personInfo.vacancy,
             utm
         )
+
+        if (success) {
+            setPersonInfo({
+                name: "",
+                phone: "",
+                city: "",
+                vacancy: ""
+            })
+            setAgree(false)
+        }
+
+        setIsSending(false)
     }
 
     const inputHandler = (
@@ -82,7 +97,13 @@ const FormSection = () => {
                         className="form-select"
                         name="vacancy"
                         value={personInfo.vacancy}
-                        onChange={inputHandler}
+                        onChange={event => {
+                            const selectedText = event.target.options[event.target.selectedIndex].text
+                            setPersonInfo(prev => ({
+                                ...prev,
+                                vacancy: selectedText
+                            }))
+                        }}
                         required
                     >
                         <option value="" disabled>
@@ -113,8 +134,12 @@ const FormSection = () => {
                         </span>
                     </label>
 
-                    <button className="form-btn" type="submit" disabled={!agree}>
-                        Отправить
+                    <button
+                        className="form-btn"
+                        type="submit"
+                        disabled={!agree || isSending}
+                    >
+                        {isSending ? "Отправка..." : "Отправить"}
                     </button>
                 </form>
             </div>

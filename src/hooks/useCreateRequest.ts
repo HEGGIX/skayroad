@@ -7,7 +7,7 @@ const useCreateRequest = async (
     city: string,
     vacancy: string,
     utm?: Record<string, string>
-): Promise<void> => {
+): Promise<boolean> => {
     try {
         const message = `
             Имя, Фамилия: ${name}
@@ -31,12 +31,14 @@ const useCreateRequest = async (
             pauseOnFocusLoss: false
         });
 
+        return true
     } catch (error) {
-        return rejectWithValue((error as Error).message)
+        toast.error("Ошибка при отправке. Попробуйте снова.")
+        return false
     }
 }
 export default useCreateRequest
 
-function rejectWithValue(message: string): void | PromiseLike<void> {
-    throw new Error(message)
-}
+// function rejectWithValue(message: string): void | PromiseLike<void> {
+//     throw new Error(message)
+// }

@@ -96,10 +96,18 @@ const Form = () => {
                         className="form-select"
                         name="vacancy"
                         value={personInfo.vacancy}
-                        onChange={inputHandler}
+                        onChange={event => {
+                            const selectedText = event.target.options[event.target.selectedIndex].text
+                            setPersonInfo(prev => ({
+                                ...prev,
+                                vacancy: selectedText
+                            }))
+                        }}
                         required
                     >
-                        <option value="" disabled>Выберите вакансию</option>
+                        <option value="" disabled>
+                            Выберите вакансию
+                        </option>
                         <option value="own-car">На личном авто</option>
                         <option value="rental-car">На арендном авто (для города Минска)</option>
                     </select>
