@@ -10,8 +10,8 @@ const MapPoint = () => {
                 <div className="description">
                     Официальный партнёр сервиса Яндекс Такси в Беларуси. Мы помогаем на каждом этапе вступления в реестр. Гарантируем своевременные еженедельные выплаты и ежедневную поддержку. Официальное трудоустройство по трудовому договору. Уплата всех налогов и взносов.
                 </div>
-                    <Map className="map" defaultState={{center: [53.905504, 27.502731], zoom: 17}}>
-                        <Placemark defaultGeometry={[53.905504, 27.502731]}/>
+                    <Map className="map" defaultState={{center: [53.940161, 27.567045], zoom: 17}}>
+                        <Placemark defaultGeometry={[53.940161, 27.567045]}/>
                     </Map>
                 </div>
         </YMaps>
