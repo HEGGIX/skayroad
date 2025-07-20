@@ -5,7 +5,7 @@ const Header = () => {
     return(
         <header className="header">
             <div className="header-wrapper">
-                <div className="header-title">СкайРоуд</div>
+                <div className="header-title">Heppacompany</div>
                 <div className="header-phone__container">
                     <a className="header-phone" href="tel:+375447412269">+375 (44) 741-22-69</a>
                     <a className="header-phone" href="tel:+375333294602">+375 (33) 329-46-02</a>
