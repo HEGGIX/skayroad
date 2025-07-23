@@ -5,6 +5,7 @@ import { RequestContext } from "../../context"
 import close from "../../assets/images/close.png"
 import useCreateRequest from "../../hooks/useCreateRequest"
 import { getUTMParams } from "../../utils/getUTMParams"
+import privacyPolicy from "../../assets/files/privacy-policy.pdf";
 
 const Form = () => {
     const requestContext = useContext(RequestContext)
@@ -17,6 +18,8 @@ const Form = () => {
     })
 
     const [utm, setUtm] = useState<Record<string, string>>({})
+    const [agree, setAgree] = useState(false)
+
 
     useEffect(() => {
         setUtm(getUTMParams())
@@ -105,6 +108,28 @@ const Form = () => {
                         <option value="own-car">На личном авто</option>
                         <option value="rental-car">На арендном авто (для города Минска)</option>
                     </select>
+
+                    <label className="form-checkbox__label">
+                        <input
+                            type="checkbox"
+                            className="form-checkbox"
+                            checked={agree}
+                            onChange={() => setAgree(prev => !prev)}
+                            required
+                        />
+                        <span>
+                            Я соглашаюсь с{" "}
+                            <a
+                                href={privacyPolicy}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                обработкой персональных данных
+                            </a>
+                            *
+                        </span>
+                    </label>
+
                     <button className="form-btn">Отправить</button>
                 </form>
             </div>

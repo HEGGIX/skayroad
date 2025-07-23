@@ -1,14 +1,23 @@
 import "../footer/styles/style.scss"
 import "../footer/styles/styleMedia.scss"
+import privacyPolicy from "../../assets/files/privacy-policy.pdf";
 
 const Footer = () => {
     return(
         <footer className="footer">
             <div className="footer-wrapper">
                 <div className="footer-column first">
-                    <span className="footer-column__text">© {new Date().getFullYear()} – Все права защищены</span>
+                    <span className="footer-column__text">© {new Date().getFullYear()} – Все права защищены</span>
                     <span
                         className="footer-column__text"><br/>Адрес: Беларусь, г. Минск,<br/>Некрасова 114, Оф. 84.<br/>Пом.(кабинет 1-40), 220068</span>
+                    <span
+                        className="footer-column__text"><br/><a
+                        href={privacyPolicy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                                Политика конфиденциальности
+                            </a></span>
                 </div>
                 <div className="footer-column">
                     <span className="footer-column__text">График работы офиса:</span>
