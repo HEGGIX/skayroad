@@ -7,7 +7,6 @@ const Header = () => {
             <div className="header-wrapper">
                 <div className="header-title">Heppacompany</div>
                 <div className="header-phone__container">
-                    <a className="header-phone" href="tel:+375447412269">+375 (44) 741-22-69</a>
                     <a className="header-phone" href="tel:+375333294602">+375 (33) 329-46-02</a>
                     <a className="header-phone" href="tel:+375336070742">+375 (33) 607-07-42</a>
                 </div>
