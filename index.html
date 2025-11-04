@@ -36,6 +36,30 @@
         ttq.page();
       }(window, document, 'ttq');
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('.form__inp-container');
+        if (!form) return;
+
+        const submitButton = form.querySelector('.form-btn');
+
+        if (submitButton) {
+          submitButton.addEventListener('click', function () {
+            if (typeof ttq !== 'undefined') {
+              ttq.track('ClickButton');
+              console.log('TikTok Pixel: ClickButton отправлен');
+            }
+          });
+        }
+
+        form.addEventListener('submit', function (event) {
+          if (typeof ttq !== 'undefined') {
+            ttq.track('Lead');
+            console.log('TikTok Pixel: Lead отправлен');
+          }
+        });
+      });
+    </script>
     <!-- TikTok Pixel Code End -->
     <title>Работа водителем в Яндекс Такси в Минске - Skayroad</title>
   </head>
