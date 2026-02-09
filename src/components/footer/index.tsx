@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-column first">
                     <span className="footer-column__text">© {new Date().getFullYear()} – Все права защищены</span>
                     <span
-                        className="footer-column__text"><br/>Адрес: Беларусь, г. Минск,<br/>Некрасова 114, Оф. 84.<br/>Пом.(кабинет 1-40), 220068</span>
+                        className="footer-column__text"><br/>Адрес: Беларусь, г. Минск,<br/>пр-т Дзержинского 22, каб. 337<br/>220068</span>
                     <span
                         className="footer-column__text"><br/><a
                         href={privacyPolicy}
